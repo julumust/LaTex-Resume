@@ -1,0 +1,258 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% \usepackage{showframe} % REMOVE for clean output
+\input{glyphtounicode}
+\usepackage{microtype}
+
+%----------FONT OPTIONS----------
+% (optional)
+
+\usepackage{fontawesome5}
+\usepackage{graphicx}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+% \raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{%
+  \item {\normalsize #1 \hfill \normalsize #2}%
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Vinicius Dias}
+\end{center}
+
+\begin{center}
+\small \scalebox{-1}[0.8]{\faPhone} +44 746 4094 472 \hspace{0.25cm}
+\scalebox{0.9}{\faEnvelopeSquare}
+\href{mailto:vinicius_dias0@outlook.com}{ vinicius\_dias0@outlook.com}
+\end{center}
+
+%----------PERSONAL PROFILE--------
+\section{\textbf{PERSONAL PROFILE}}
+\resumeSubHeadingListStart
+      \resumeItem{An Aerospace Engineering graduate with a 2:1 from the University of Nottingham with a keen interest in financial markets. I aim to apply my skills in the Graduate Traineeship at STX, implementing innovative solutions to enhance STX's quarterly profitability and embolden stakeholder satisfaction. Passionate about AI, options trading, and international relations. I am committed to continuous learning and effective collaboration within a dynamic team.}
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{\textbf{EDUCATION}}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Aerospace Engineering MEng (Hons)}{Nottingham, UK}
+    {The University of Nottingham}{Sept. 2020 -- Jun. 2024}
+  \resumeSubSubheading
+    {Cumulative Weighted Average: Second Class, Division One}{}
+  \vspace{1pt}
+  \resumeSubheading
+    {Project 1: Comparative Study of YOLOv8 Implementation for Surgical Instrument Detection}{}{}{}
+  \vspace{-15pt}
+  \resumeProjectHeading{Created a machine learning model using continual learning strategies to monitor surgical tool identification accuracy, demonstrating adaptability to new data inputs without loss of previously acquired knowledge.}{}
+  \vspace{-5pt}
+  \resumeItemListStart
+    \resumeItem{Researched, reviewed, and analysed object detection technology and its implementation in Minimally Invasive Surgery (MIS).}
+    \resumeItem{Conducted a literature review presenting a detailed review of the state of the MIS and how object detection is being implemented in the medical field.}
+    \resumeItem{Implemented a Convolutional Neural Network (CNN) for error detection, achieving robust performance through systematic testing and fine-tuning of hyperparameters.}
+    \resumeItem{Demonstrated strong programming skills in Python, augmenting technical abilities in data analysis and machine learning while maintaining clear documentation and version control throughout the project.}
+  \resumeItemListEnd
+  \vspace{5pt}
+  \resumeSubheading
+    {Project 2: Lunar Rover Sample Collection Mission}{}{}{}
+  \vspace{-15pt}
+  \resumeProjectHeading{Collaborated with a team of 5 engineering students to design and construct a system for retrieving lunar surface samples from the Moon’s south pole and returning to orbit.}{}
+  \vspace{-5pt}
+  \resumeItemListStart
+    \resumeItem{Leveraged MATLAB to simulate critical mission phases, including Hohmann transfers, powered descent initiation (PDI), and retrograde burns for orbital insertion. Formulated algorithms to calculate delta-V requirements, fuel consumption, and optimal manoeuvres for landing and ascent.}
+    \resumeItem{Implemented Python to create optimisation algorithms, automating performance analysis and enhancing system efficiency by simulating mission parameters and evaluating the impact of design changes on overall spacecraft and subsystem performance.}
+    \resumeItem{Developed advanced proficiency in CAD modeling (CATIA, SolidWorks) through the design of a detailed 3D model of the lunar rover, incorporating complex mechanical components and mission-specific features.}
+  \resumeItemListEnd
+  \vspace{5pt}
+  \resumeSubheading
+    {Project 3: Ground Effect Vehicle}{}{}{}
+  \vspace{-15pt}
+  \resumeProjectHeading{Collaborated with a team of five engineering students to design and construct a fully functional Ground Effect Vehicle prototype.}{}
+  \vspace{-5pt}
+  \resumeItemListStart
+    \resumeItem{Researched and analysed ground effect vehicles, reviewing aerodynamic performance across wing, fuselage, and airframe configurations using JavaFoil and XFLR5 (a low-speed aerodynamic analysis tool) to assess stability and efficiency.}
+    \resumeItem{Built deep technical knowledge in CAD modelling using CATIA by designing a detailed 3D wing model, importing aerofoil sections to construct the outer surface and internal rib structure.}
+    \resumeItem{Positioned CAD components for 3D printing by instantiating 2D component layouts in CATIA’s 2D Layout for 3D Design workbench, then built the physical wing model through 3D printing.}
+  \resumeItemListEnd
+  \vspace{5pt}
+  \resumeSubheading
+    {Engineering Foundation Year}{Swansea, Wales}
+    {Swansea University}{Sept. 2019 -- Jun. 2020}
+  \resumeSubSubheading
+    {Cumulative Weighted Average: First Class}{}
+  \vspace{1pt}
+  \resumeSubheading
+    {Finchley Catholic High School}{London, UK}
+    {}{Sept. 2012 -- Jun. 2018}
+  \resumeItemListStart
+    \resumeItem{\textbf{A Level:} Physics, Chemistry, Computer Science}
+    \resumeItem{\textbf{GCSE:} 11 GCSE’s: (8-5) including Grade A* equivalent in English Literature and Grade 6 in Mathematics}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{\textbf{WORK EXPERIENCE}}
+\resumeSubHeadingListStart
+
+ % \resumeSubheading
+ %   {Software Engineer Summer Intern}{Jun. 2024 -- Sept. 2024}
+ %   {Millenium}{London, UK}
+  %\resumeItemListStart
+   % \resumeItem{Collaborated with engineers to design, improve, and maintain scalable Java/Python services supporting research and trading workflows, with a focus on performance, reliability, and clean code.}
+ %   \resumeItem{Built and enhanced automation tools for cloud-based environments (AWS/GCP), streamlining deployment, monitoring, and testing processes.}
+ %   \resumeItem{Applied data-driven problem solving to develop internal tools and APIs, working across backend systems and modern front-end frameworks (React/Angular) as needed.}
+ % \resumeItemListEnd  
+  
+  \resumeSubheading
+    {Watch Specialist}{Sept. 2017 -- Jun. 2018}
+    {Fossil Group}{London, UK}
+  \resumeItemListStart
+    \resumeItem{Maintained high standards of visual merchandising and product presentation on the shop floor.}
+    \resumeItem{Delivered strong customer service and persuasive sales techniques to drive watch sales.}
+    \resumeItem{Met and exceeded weekly performance targets by tracking personal sales using Microsoft Excel.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Warehouse Operative}{Jul. 2022 -- Present}
+    {Marks \& Spencer}{London, UK}
+  \resumeItemListStart
+    \resumeItem{Supervised shop floor operations and supported team coordination during peak hours.}
+    \resumeItem{Delivered high-quality customer service at tills and resolved queries efficiently.}
+    \resumeItem{Processed deliveries and prepared stock for next-day distribution across departments.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EXTRACURRICULARS-----------
+\section{\textbf{EXTRACURRICULAR ACTIVITIES}}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Peer Mentor}{Sept. 2021 -- Jun. 2022}
+    {Academic Peer Mentor}{Nottingham, UK}
+  \resumeItemListStart
+    \resumeItem{Collaborated with students to deliver supplementary feedback on coursework and encouraged participation in enrichment opportunities.}
+    \resumeItem{Guided new students on tours of the university campus, ensuring they experienced a warm and welcoming introduction.}
+    \vspace{-12pt}
+    \resumeItem{Organised events within the Engineering Department to provide students with greater insight into future career paths and developments within the engineering industry.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Brazilian Jiu-Jitsu Varsity Team}{Sep. 2022 -- Jun. 2024}
+    {Treasurer}{Nottingham, UK}
+  \resumeItemListStart
+    \resumeItem{Managed society finances, ensuring budgets were maintained and events carefully coordinated.}
+    \resumeItem{Hosted BJJ taster days for new students, coordinating instructors and introducing newcomers to the sport.}
+    \resumeItem{Mentored newcomers, helping them develop their submission arsenal while further honing my own technical skills.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Model United Nations}{Sept. 2023 -- Jun. 2024}
+    {Treasurer}{Nottingham, UK}
+  \resumeItemListStart
+    \resumeItem{Developed budget proposals with the Student Politics Society to plan major university conferences. I maintained transparent accounts and used financial insight to support sustainable and ethical decisions for the society.}
+    \resumeItem{Built and sustained relationships with Model United Nations societies at other universities and external organisations to enhance networking opportunities and promote collaboration.}
+    \resumeItem{Worked with the President and members to foster a positive, engaging environment, supporting delegates in conference preparation and providing mentorship and guidance.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%------------TECHNOLOGIES-----------
+\section{\textbf{TECHNOLOGIES}}
+\resumeItemListStart
+  \resumeItem{\textbf{Languages:} Python, MATLAB, Simulink, JavaScript, BASH}
+  \resumeItem{\textbf{CAD Software:} 3D EXPERIENCE CATIA, SolidWorks}
+  \resumeItem{\textbf{Technologies:} MySQL, Visual Studio, Git, Microsoft Azure, Tensorflow, Kubernetes, Docker, VirtualBox, Linux}
+\resumeItemListEnd
+
+%---------ACHIEVEMENTS------------
+\section{\textbf{ACHIEVEMENTS}}
+\resumeItemListStart
+  \resumeItem{\textbf{Udemy Certification:} Python for Data Science and Machine Learning Bootcamp – Gained comprehensive skills in data visualisation and machine learning covering Numpy, Pandas, Linear Regression, Logistic Regression, K Means Clustering, and more.}
+\resumeItemListEnd
+\resumeItemListStart
+  \resumeItem{\textbf{Udemy Certification:} Python for Finance and Algorithmic Trading with QuantConnect – Gained core skills in portfolio optimisation, CAPM, Monte Carlo Simulations, Log Returns, Efficient Frontier, and more.}
+%  \resumeItem{\Microsoft Certification: Azure Data Fundamentals (Score: 835/1000) – Developed core skills in data storage, processing, and analysis using Azure.}
+\resumeItemListEnd
+
+%-----------SKILLS & INTERESTS-----------
+\section{\textbf{SKILLS \& INTERESTS}}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Skills}{: Linux (Ubuntu \& Kali), Qubes, Web Design, Microsoft Excel, Microsoft Office, Burp Suite, Wireshark} \\
+    \textbf{Interests}{: Photography, Creative Writing, International Relations, Integrated Information Theory} \\
+  }}
+\end{itemize}
+
+\end{document}
+
