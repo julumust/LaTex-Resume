@@ -5,4 +5,4 @@ This CV template is based on a template by Jake Gutierrez, it can be found here:
 
 # Preview
 ![CV Page 1](preview.png)
-![CV Page 2](preview1.png)	
+![CV Page 2](preview2.png)	
